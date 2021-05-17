@@ -1,5 +1,15 @@
 import React from 'react'
 
+import { Logo } from './components/Logo'
+import { GlobalStyle } from './styles/GlobalStyle'
+import { ListOfPhotoCard } from './components/ListOfPhotoCard'
+import { ListOfCategories } from './components/ListOfCategories'
+
 export const App = () => (
-  <h1>Hola, seguimos con el curso avanzado</h1>
+  <>
+    <GlobalStyle />
+    <Logo />
+    <ListOfCategories />
+    <ListOfPhotoCard />
+  </>
 )
