@@ -15,8 +15,10 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^5.3.1",
     "standard": "^16.0.3",
@@ -26,7 +28,10 @@
     "wepack-cli": "0.0.1-security"
   },
   "dependencies": {
+    "apollo-boost": "^0.4.9",
+    "graphql": "^15.5.0",
     "react": "^17.0.2",
+    "react-apollo": "^3.1.5",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "styled-components": "^5.3.0"
