@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-closing-tag-location */
 import React from 'react'
 
+import { Link } from '@reach/router'
+
 import { FavButton } from '../FavButton'
 import { Article, ImagWrapper, Img } from './styles'
 import { useNearScreen } from '../../hooks/useNearScreen'
@@ -18,11 +20,11 @@ export const PhotoCard = ({ id, likes = 100, src = DEFAULT_IMAGE }) => {
     <Article ref={ref}>
       {show && (
         <>
-          <a href={`/?detail=${id}`}>
+          <Link to={`/detail/${id}`}>
             <ImagWrapper>
               <Img src={src} alt='Foto de perfil' />
             </ImagWrapper>
-          </a>
+          </Link>
 
           <ToggleLikeMutation>
             {
