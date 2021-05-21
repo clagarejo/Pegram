@@ -12,8 +12,12 @@ html {
     box-sizing: inherit;
 }
 
-ul, li, h1, h2, h3, p, button {
+ul, li, h2, h3, p, button {
     margin: 0;
+}
+
+h1{
+    text-align: center;
 }
 
 ul {
